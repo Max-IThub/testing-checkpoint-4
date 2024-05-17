@@ -52,19 +52,19 @@ def test_login(browser, username, password):
 @allure.feature("Additional Functionality")
 def test_additional_functionality_1(browser):
     with allure.step("Execute additional functionality test 1"):
-        browser.get("http://yourappurl.com/additional_functionality_1")
+        browser.get("http://dns-shop.ru/additional_functionality_1")
         assert browser.find_element_by_id("element_id_1").is_displayed()
 
 @allure.feature("Additional Functionality")
 def test_additional_functionality_2(browser):
     with allure.step("Execute additional functionality test 2"):
-        browser.get("http://yourappurl.com/additional_functionality_2")
+        browser.get("http://dns-shop.ru/additional_functionality_2")
         assert browser.find_element_by_class_name("element_class_2").is_displayed()
 
 @allure.feature("Some Additional Feature")
 def test_some_feature(browser):
     with allure.step("Execute some additional feature test"):
-        browser.get("http://yourappurl.com/some_additional_feature")
+        browser.get("http://dns-shop.ru/some_additional_feature")
         assert "Some Additional Feature" in browser.page_source
 
 if __name__ == "__main__":
